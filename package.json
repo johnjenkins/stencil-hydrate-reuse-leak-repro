@@ -1,0 +1,13 @@
+{
+  "name": "stencil-hydrate-reuse-leak-repro",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Repro for a memory leak in stenciljs/core PR #6794 (feat(hydrate): cache platform closure and add opt-in window reuse)",
+  "scripts": {
+    "build": "stencil build",
+    "leak-check": "node --expose-gc leak-check.js"
+  },
+  "devDependencies": {
+    "@stencil/core": "file:../stenciljs"
+  }
+}
